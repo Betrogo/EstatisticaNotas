@@ -4,7 +4,6 @@
 
 #include "estatisticas.h"
 
-#include <stdbool.h>
 #include <stdio.h>
 
 float calcMedia(float notas[], const int quantAlunos) {
@@ -62,7 +61,7 @@ int validarNotas(float notas[]) {
 
     for (int i = 0; i < quantAlunos; i++) {
         float nota = 0;
-        while (true) {
+        while (1) {
             printf("Informe a %da nota (0-10): ", i + 1);
             scanf("%f", &nota);
             if (nota >= 0 && nota <= 10) {
